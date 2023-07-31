@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  margin: 0;
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(0deg, hsl(240, 73%, 65%) 0%, hsl(273, 75%, 66%) 100%);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+}
+main .content {
+  background: hsl(240, 5%, 91%);
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  min-height: 550px;
+}
+main .content .img, main .content .infos {
+  width: 400px;
+  min-height: 550px;
+}
+main .content .img {
+  background: url("../images/bg-pattern-desktop.svg") no-repeat;
+  background-position: 100% 75%;
+  position: relative;
+}
+main .content .img svg:nth-child(2) {
+  position: absolute;
+  left: -75px;
+  top: 75px;
+  z-index: 1;
+}
+main .content .img svg:nth-child(1) {
+  position: absolute;
+  top: 210px;
+  left: -100px;
+  z-index: 2;
+}
+main .content .img svg:nth-child(3) {
+  display: none;
+}
+main .content .infos {
+  padding: 0 24px;
+}
+main .content .infos h1 {
+  margin: 48px 0;
+}
+main .content .infos .question {
+  max-width: 90%;
+  border-bottom: 1px solid hsl(240, 6%, 50%);
+}
+main .content .infos .question h4 {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(237, 12%, 33%);
+}
+main .content .infos .question h4:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+main .content .infos .question p {
+  display: none;
+}
+main .content .infos .response {
+  max-width: 90%;
+  border-bottom: 1px solid hsl(240, 6%, 50%);
+}
+main .content .infos .response h4 {
+  display: flex;
+  justify-content: space-between;
+}
+main .content .infos .response h4:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+main .content .infos .response h4 span .rotate {
+  transform: rotate(180deg);
+}
+main .content .infos .response p {
+  display: block;
+}
+@media screen and (max-width: 950px) {
+  main {
+    padding: 128px 0;
+  }
+  main .content {
+    flex-direction: column;
+    max-width: 90%;
+    padding: 0 12px;
+  }
+  main .content .img {
+    position: relative;
+    min-height: 230px;
+    background: url("../images/bg-pattern-mobile.svg") no-repeat;
+    background-position: 0 100%;
+    background-size: contain;
+  }
+  main .content .img svg:nth-child(1), main .content .img svg:nth-child(2) {
+    display: none;
+  }
+  main .content .img svg:nth-child(3) {
+    max-width: 100%;
+    margin: 0 auto;
+    display: inline;
+    position: absolute;
+    top: -100px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .content .img {
+    width: 100%;
+    background-size: 100%;
+    background-position: 50% 50%;
+  }
+  main .content .img svg:nth-child(3) {
+    max-width: 300px;
+    left: calc(50% - 140px);
+  }
+  main .content .infos {
+    width: 100%;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

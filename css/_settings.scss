@@ -1,0 +1,26 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+// colors
+
+// primary
+$veryDarkDesaturedBlue: hsl(238, 29%, 16%);
+$softRed: hsl(14, 88%, 65%);
+
+// gradient
+$softViolet: hsl(273, 75%, 66%);
+$softBlue: hsl(240, 73%, 65%);
+
+// neutral
+$veryDarkGrayishBlue: hsl(237, 12%, 33%);
+$darkGrayishBlue: hsl(240, 6%, 50%);
+
+// dividers
+$lightGrayishBlue: hsl(240, 5%, 91%);
+
+body{
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(0deg, $softBlue 0%, $softViolet 100%);
+}
